@@ -1,0 +1,13 @@
+<section class="works" *ngIf="works">
+    <div class="works--card card" *ngFor="let work of works | async">
+    <img [src]="'/assets/img/works/' + work.image" alt="">
+      <div class="works--card--text">
+        <h3 class="works--card--title">{{ work.title }}</h3>
+        <p class="works--card--client">{{ work.client }}</p>
+      </div>
+    
+      <div [routerLink]="routeDirect + work._id" class="works--card--hover">
+        <p class="works--card--hover--text" i18n>Informazioni</p>
+      </div>
+    </div>
+  </section>

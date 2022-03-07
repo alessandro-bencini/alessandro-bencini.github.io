@@ -1,0 +1,64 @@
+@use "../helpers/" as *;
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25em;
+  background-color: $dark;
+  margin: 0 auto;
+  margin-top: 2em;
+  padding: 2em 0.75em;
+  max-width: 700px;
+
+  box-shadow: 0 10px 10px 0 rgb(0 0 0 / 20%);
+
+  &--field {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &--label {
+    color: $text-light;
+    margin-bottom: 0.5em;
+    font-weight: 700;
+  }
+
+  &--input,
+  &--textarea {
+    width: 80%;
+    max-width: 330px;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  &--input {
+    font-size: 1rem;
+    height: 2em;
+    text-align: center;
+  }
+
+  &--submit {
+    width: min-content;
+    margin: 0 auto;
+    margin-top: 1.75em;
+    background-color: $accent;
+    border-color: $accent;
+    color: $text-light;
+
+    &:hover,
+    &:focus {
+      border-color: $text-light;
+    }
+  }
+
+  &--error,
+  &--success {
+    color: $text-light;
+    font-size: 0.8em;
+    margin-top: 0.5em;
+  }
+
+  &--success {
+    margin-top: 1.25em;
+  }
+}

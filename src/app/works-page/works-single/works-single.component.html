@@ -1,0 +1,34 @@
+<section class="work-single" *ngIf="work">
+    <img [src]="'/assets/img/works/' + work.image" alt="" class="work-single--img">
+    <div class="work-single--text">
+      <h3 class="work-single--title">{{ work.title }}</h3>
+      <p class="work-single--client">{{ work.client }}</p>
+    </div>
+
+    <div class="work-single--about">
+      <h4 i18n>Sul progetto</h4>
+      <div *ngIf="lang == 'en'; then thenBlock else elseBlock"></div>
+        <p class="work-single--description">
+          <ng-template #thenBlock>{{ work.description }}</ng-template>
+          <ng-template #elseBlock>{{ work.description_it }}</ng-template>
+          <br>
+          <span i18n>Regia di:</span> {{ work.director}}
+      
+          <span *ngIf="work.musicSuper" i18n><br>Supervisore musiche:</span> {{ work.musicSuper }}
+          
+          <span *ngIf="work.mixer" i18n><br>Fonico:</span> {{ work.mixer }}
+          
+          <span *ngIf="work.conductor" i18n><br>Direttore d'orchestra:</span> {{ work.conductor }}
+         
+          <span *ngIf="work.copyist" i18n><br>Copista:</span> {{ work.copyist }}
+         
+          <span *ngIf="work.soloists" i18n><br>Solisti:</span> {{ work.soloists }}
+        </p>
+       <!-- <p class="work-single--description">{{ work.this.descriptionLang }}</p> -->
+
+       <iframe *ngIf="work.embed" class="iframe" allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="450" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" [src]="sanitizeUrl(work.embed)"></iframe>
+
+      <button routerLink="/works-page" class="back-btn btn btn-dark" i18n>Indietro</button>
+    </div>
+   
+  </section>

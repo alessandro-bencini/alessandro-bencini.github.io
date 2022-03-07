@@ -1,0 +1,29 @@
+@use "_colors" as *;
+
+.page-title {
+  padding-top: 3em;
+  padding-bottom: 0.5em;
+  color: $accent;
+  font-size: 1.65em;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 1.5em;
+    border-radius: 1px;
+    background-color: $dark;
+    opacity: 50%;
+    margin: 0 auto;
+    margin-top: 0.25em;
+  }
+}
+
+.section-title,
+.page-title {
+  /* color: $accent-dark; */
+  background: $gradient;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

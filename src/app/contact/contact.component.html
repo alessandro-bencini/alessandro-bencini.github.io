@@ -1,0 +1,69 @@
+<section class="contact">
+    <h2 class="title page-title" i18n>Contattatemi</h2>
+    <p class="contact--paragraph" i18n>
+      Se avete domande o desidarate contattarmi, sarò più che felice di ricevere una vostra email. Riempite il form qui sotto e vi risponderò appena possibile.
+    </p>
+
+    <form class="form" (ngSubmit)="submitForm(contactForm)" #contactForm="ngForm">
+          <div class="form--field">
+            <label for="name" class="form--label" i18n>Nome e cognome</label>
+            <input
+              type="text"
+              name="name"
+              class="form--input"
+              [(ngModel)]="name"
+              #nameInput="ngModel"
+              required>
+
+            <div class="form--error" *ngIf="nameInput.invalid && nameInput.touched" i18n>
+              È richiesto il nome
+            </div>
+          </div>
+
+          <div class="form--field" style="margin-bottom: 2em;">
+            <label for="email" class="form--label" i18n>Email</label>
+            <input
+              type="email"
+              name="email"
+              class="form--input"
+              [(ngModel)]="email"
+              #emailInput="ngModel"
+              required
+              email>
+
+            <div class="form--error" *ngIf="emailInput.invalid && emailInput.touched" i18n>
+              L'email è richiesta e deve essere un indirizzo valido
+            </div>
+          </div>
+
+          <div class="form--field">
+            <label for="name" class="form--label" i18n>Oggetto</label>
+            <input
+              type="text"
+              name="subject"
+              class="form--input"
+              [(ngModel)]="subject"
+              #subjectInput="ngModel"
+              required>
+
+            <div class="form--error" *ngIf="subjectInput.invalid && subjectInput.touched" i18n>
+              L'oggetto dell'email è richiesto
+            </div>
+          </div>
+
+          <div class="form--field">
+            <label for="name" class="form--label" i18n>Messaggio</label>
+            <textarea rows="6" name="message" class="form--textarea" [(ngModel)]="message"></textarea>
+          </div>
+
+          <div class="form--field">
+            <button
+              type="submit"
+              class="form--submit btn"
+              [disabled]="contactForm.invalid" i18n>
+              Invia
+            </button>
+            <div class="form--success" *ngIf="showMsg">Email sent!</div>
+          </div>
+        </form>
+  </section>

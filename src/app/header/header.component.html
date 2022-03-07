@@ -1,0 +1,85 @@
+<div class="background-darken show-hide" id="background-darken"></div>
+
+<header class="header">
+    <div class="header--flex">
+
+    <div routerLink="/" class="header--logo">
+        <p class="header--logo--text">Alessandro Bencini</p>
+    </div>
+
+    <nav class="header--nav">
+        <ul class="nav--menu">
+        <li class="nav--menu--item">
+                <a routerLink="/" class="nav--menu--item--link">Home</a></li>
+            <li class="nav--menu--item">
+                <a routerLink="works-page" class="nav--menu--item--link" i18n>Lavori</a></li>
+            <li class="nav--menu--item">
+                <a routerLink="biography" class="nav--menu--item--link" i18n>Biografia</a></li>
+            <li class="nav--menu--item">
+                <a routerLink="contact" class="nav--menu--item--link" i18n>Contatti</a></li>
+           <!--  <li class="nav--menu--item">
+            <select id="select-menu" class="lang-select">
+                <option value="ita" [selected]="lang == 'ita'" class="lang-select--opt">🇮🇹</option>
+                <option value="en" [selected]="lang == 'en'" class="lang-select--opt">🇺🇸</option>
+            </select>
+            </li> -->
+        </ul>
+    </nav>
+
+    <div class="header--social">
+        <ul class="header--social--list">
+            <li class="header--social--list--item">
+                <a class="header--social--list--item--link"><i class="fa-brands fa-imdb"></i></a></li>
+            <li class="header--social--list--item">
+                <a href="https://www.facebook.com/alessandrobencini.s" class="header--social--list--item--link"><i class="fab fa-facebook"></i></a></li>
+        </ul>
+    </div>
+
+    <div class="header--ham-container" id="ham" on-click="animateMenu()">
+        <div class="header--ham-container--btn">
+            <div class="header--ham-container--btn--line" id="line1"></div>
+            <div class="header--ham-container--btn--line" id="line2"></div>
+            <div class="header--ham-container--btn--line" id="line3"></div>
+        </div>
+    </div>
+
+</div>
+</header>
+
+<div class="header--ham-menu" id="ham-menu">
+    <nav class="header--ham-menu--nav">
+        <ul class="ham--list">
+            <li class="ham--list--item" on-click="animateMenu()">
+                <a routerLink="/" class="ham--list--item--link">Home</a></li>
+            <li class="ham--list--item" on-click="animateMenu()">
+                <a routerLink="contact" class="ham--list--item--link" i18n>Contatti</a></li>
+            <li class="ham--list--item" on-click="animateMenu()">
+                <a routerLink="/works-page" class="ham--list--item--link" i18n>Lavori</a></li>
+            <li class="ham--list--item" on-click="animateMenu()">
+                <a routerLink="biography" class="ham--list--item--link" i18n>Biografia</a></li>
+        </ul>
+    </nav>
+
+    <div class="header--ham-social">
+        <ul class="ham--social--list">
+            <li class="ham--social--list--item">
+                <a href="https://www.imdb.com/name/nm12897665/" target="_blank" class="ham--social--list--item--link"><i class="fa-brands fa-imdb"></i></a></li>
+            <li class="ham--social--list--item">
+                <a href="https://www.facebook.com/alessandrobencini.s" target="_blank" class="ham--social--list--item--link"><i class="fab fa-facebook"></i></a></li>
+            <li class="ham--social--list--item">
+                <a href="https://open.spotify.com/artist/6wYTfoadkkUcZAXzrz67MT?si=1DqzIvR4QQGAghoWs2K78A" target="_blank" class="ham--social--list--item--link"><i class="fa-brands fa-spotify"></i></a></li>
+            <li class="ham--social--list--item">
+                <a href="https://music.apple.com/it/artist/alessandro-bencini/1612535867" target="_blank" class="ham--social--list--item--link"><i class="fa-brands fa-itunes"></i></a></li>
+            <li class="ham--social--list--item">
+                <a href="https://music.amazon.it/artists/B008SI4EN0/alessandro-bencini?marketplaceId=APJ6JRA9NG5V4&musicTerritory=IT&ref=dm_sh_p7nntpYjzjBNLGXyyKF6oKYAU" target="_blank" class="ham--social--list--item--link"><i class="fa-brands fa-amazon"></i></a></li>    
+        </ul>
+    </div>
+
+    <div class="header--ham-language">
+        <p class="header--ham-language--title" i18n>Change language</p>
+        <div class="header--ham-language--languages">
+            <a  class="header--ham-language--languages--link">🇬🇧</a>
+            <a  class="header--ham-language--languages--link">🇮🇹</a>
+        </div>
+    </div>
+</div>

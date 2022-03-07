@@ -1,0 +1,47 @@
+.biography {
+  &--body {
+    padding-bottom: 2em;
+  }
+
+  &--img {
+    width: 100vw;
+    margin-left: -0.75em;
+  }
+}
+
+.home-bio{
+  & p {
+    margin-bottom: 2.5em;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .biography--img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .biography {
+    &--container {
+      display: grid;
+      grid-template: auto / 2fr 3fr;
+      gap: 2em;
+    }
+
+    &--body {
+      grid-row: 1 / 2;
+      grid-column: 2 / 3;
+
+      margin-top: 0;
+      text-align: left;
+    }
+
+    &--img {
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+    }
+  }
+}

@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@use "src/assets/scss/base";
+@use "src/assets/scss/helpers";
+@use "src/assets/scss/grid";
+@use "src/assets/scss/elements";
+@use "src/assets/scss/layout";

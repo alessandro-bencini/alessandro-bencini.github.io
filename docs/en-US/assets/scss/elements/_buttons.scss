@@ -1,0 +1,40 @@
+@use "../helpers/" as *;
+
+.btn {
+  cursor: pointer;
+  border: none;
+  padding: 1em 2em;
+  border-radius: 0.25em;
+  font-weight: 700;
+  background: $main;
+  color: $text-dark;
+  border: 2px solid $main;
+
+  transition: all 100ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: $text-light;
+    background-color: $dark;
+  }
+}
+
+.btn-dark {
+  background-color: $accent-dark;
+  color: $main;
+  border-radius: 0.25em;
+  border: 2px solid $accent-dark;
+
+  &:hover,
+  &:focus {
+    color: $accent-dark;
+    background-color: $main;
+  }
+}
+
+button[type="submit"]:disabled {
+  background-color: rgb(214, 214, 214);
+  border: none;
+  color: rgb(94, 94, 94);
+  cursor: not-allowed;
+}
