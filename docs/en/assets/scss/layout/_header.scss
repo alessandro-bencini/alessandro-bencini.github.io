@@ -201,6 +201,7 @@
 
   .nav--menu {
     display: flex;
+    align-items: flex-end;
 
     &--item {
       &::after {
@@ -219,6 +220,23 @@
       &:hover::after,
       &:focus::after {
         transform: scale(1, 1);
+      }
+
+      &:last-child {
+        margin-left: 1.5em;
+        color: $text-light;
+        display: flex;
+        align-items: last baseline;
+        gap: 0.35em;
+        &::after {
+          display: none;
+        }
+
+        & a {
+          padding: 0 0.25em;
+          text-decoration: none;
+          font-size: 1.25em;
+        }
       }
 
       &--link {
