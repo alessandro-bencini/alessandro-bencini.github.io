@@ -1,0 +1,241 @@
+@use "../helpers" as *;
+
+.header {
+  background-color: $dark;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+  z-index: 101;
+
+  &--flex {
+    padding: 0.25em 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &--nav,
+  &--social {
+    display: none;
+  }
+
+  &--logo {
+    color: $text-light;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 0.025em;
+    cursor: pointer;
+  }
+
+  &--ham-container {
+    display: block;
+    padding: 0.5em 0;
+    cursor: pointer;
+    z-index: 105;
+
+    &:focus {
+      outline: 2px solid white;
+    }
+
+    &--btn {
+      &--line {
+        display: block;
+        position: relative;
+        height: 3px;
+        background-color: $text-light;
+        width: 1.75em;
+        border-radius: 1.5px;
+        transition: 100ms ease-in;
+
+        &:nth-child(2) {
+          margin-top: 0.25em;
+          margin-bottom: 0.25em;
+        }
+      }
+    }
+  }
+
+  &--ham-menu {
+    background-color: $main;
+    text-align: center;
+    padding: 2em 0;
+    padding-top: 3em;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: -25em;
+    z-index: 100;
+
+    transition: top 300ms ease-out;
+
+    & a {
+      text-decoration: none;
+      color: inherit;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+
+    &--nav {
+      text-transform: uppercase;
+      font-weight: 700;
+
+      margin-bottom: 2em;
+
+      & .ham--list--item {
+        color: $text-dark;
+        margin-bottom: 1em;
+        &--link {
+          padding: 1em 0.5em;
+        }
+      }
+    }
+  }
+
+  &--ham-social {
+    margin: 0 auto;
+    max-width: 6em;
+
+    & i {
+      font-size: 2em;
+    }
+
+    & .ham--social--list {
+      display: flex;
+      justify-content: space-around;
+      gap: 2em;
+    }
+  }
+
+  &--ham-language {
+    margin: 0 auto;
+    margin-top: 2em;
+    width: 60%;
+    border-top: 2px solid $dark;
+
+    &--title {
+      font-weight: 700;
+      margin-bottom: 0.75em;
+    }
+
+    &--languages {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 2em;
+
+      &--link {
+        text-decoration: none;
+        font-size: 1.75em;
+        cursor: pointer;
+
+        /* &:first-of-type {
+          margin-bottom: 0.5em;
+        } */
+
+        &:hover,
+        &:focus {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+/* ham menu animation */
+
+.show-hide {
+  display: none;
+}
+
+.accordion {
+  top: 3.5em;
+}
+
+.tilt1 {
+  transform: rotate(45deg);
+  top: 0.45em;
+}
+
+.tilt2 {
+  transform: rotate(-45deg);
+  bottom: 0.45em;
+}
+
+.hide-line {
+  opacity: 0;
+}
+
+.background-darken {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba($color: #000000, $alpha: 0.6);
+  z-index: 99;
+}
+
+/* heder and menu media queries */
+
+@media (min-width: 1100px) {
+  .header {
+    &--flex {
+      padding-left: 3em;
+      padding-right: 3em;
+    }
+
+    &--nav {
+      display: block;
+    }
+
+    &--ham-container,
+    &--ham-menu {
+      display: none;
+    }
+  }
+
+  .nav--menu {
+    display: flex;
+
+    &--item {
+      &::after {
+        content: "";
+        display: block;
+        margin: 0 auto;
+        width: 1em;
+        height: 2px;
+        border-radius: 1px;
+        background-color: $main;
+        margin-top: 0.15em;
+        transform: scale(0, 1);
+        transition: transform 100ms ease-in;
+      }
+
+      &:hover::after,
+      &:focus::after {
+        transform: scale(1, 1);
+      }
+
+      &--link {
+        color: $text-light;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 0.8em;
+        padding: 0.25em 0.75em;
+      }
+    }
+  }
+}
+
+@media (min-width: 1500px) {
+  .header--flex {
+    padding-left: 5em;
+    padding-right: 5em;
+  }
+}

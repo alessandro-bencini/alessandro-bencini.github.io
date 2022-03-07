@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="it-IT" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="8880409561173904638" datatype="html">
+        <source>Biografia</source>
+        <target>Biography</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/biography/biography.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4819110592168556640" datatype="html">
+        <source> Alessandro ha scoperto il suo amore per la musica da bambino iniziando a cantare. Fin dai dodici anni si è esibito sul palco, prendendo parte a diversi musical in Italia e formandosi come performer con la guida di Egidio la Gioia e presso la Guilford School of Acting in Inghilterra. Crescendo ha approcciato molti strumenti musicali interessandosi della creazione di nuovi suoni e di arrangiamento, produzione e missaggio. </source>
+        <target>Alessandro discovered his love form music since he started singing as a kid. When he was twelve he started performing on stage, starring in several musicals in Italy under the artistic guidance of Egidio La Gioia and the Guilford School of Acting in the UK. Growing up he approached various musical instruments, interested in creating new sounds, and in arranging, producing and mixing.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/biography/biography.component.html</context>
+          <context context-type="linenumber">6,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4837287042254629380" datatype="html">
+        <source> La musica per media ha presentato l’occasione di combinare la sua passione per composizione, arrangiamento e produzione con quella di dar voce e interpretazione alle storie. Il background nel musical e la passione per variegati generi musicali, dal rock progressive alla world music, forniscono un carattere distintivo alla musica di Alessandro che si presta ad enfatizzare, rispettandola, l’emozione narrata dalle immagini. </source>
+         <target>Music for media represented the chance to combine his passion for composition and production with giving voice and interpret stories. His background in musical theater and passion for multiple music genres, from progressive rock to world music, helps to give a unique character to Alessandro’s music, which leads to suite and enhance, while respecting it, the emotion images carry.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/biography/biography.component.html</context>
+          <context context-type="linenumber">9,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4937064922765582399" datatype="html">
+        <source>Contattatemi</source>
+        <target>Contact me</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8419939279423684594" datatype="html">
+        <source> Se avete domande o desidarate contattarmi, sarò più che felice di ricevere una vostra email. Riempite il form qui sotto e vi risponderò appena possibile. </source>
+        <target>If you have any question and want to get in touch, I will be more than happy to receive your email. Fill the form here below and I will get back to you as soon as possibile.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">3,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3660709522908000265" datatype="html">
+        <source>Nome e cognome</source>
+        <target>Name and Last Name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7340640803973073320" datatype="html">
+        <source> È richiesto il nome </source>
+         <target>Your name is required.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">18,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4768749765465246664" datatype="html">
+        <source>Email</source>
+        <target>Email</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="943852309971926484" datatype="html">
+        <source> L&apos;email è richiesta e deve essere un indirizzo valido </source>
+        <target>Your email is required and needs to be valid.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">34,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7015516728495086990" datatype="html">
+        <source>Oggetto</source>
+        <target>Subject</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5381644875974495010" datatype="html">
+        <source> L&apos;oggetto dell&apos;email è richiesto </source>
+        <target>An email subject is required.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">49,51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8591830564179925921" datatype="html">
+        <source>Messaggio</source>
+        <target>Your message</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5915125127112847886" datatype="html">
+        <source> Invia </source>
+        <target>Send!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/contact/contact.component.html</context>
+          <context context-type="linenumber">63,65</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3709109943365858732" datatype="html">
+        <source>Lavori</source>
+        <target>Works</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="520907815118134624" datatype="html">
+        <source>Contatti</source>
+        <target>Contacts</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1210069423269934042" datatype="html">
+        <source>Change language</source>
+        <target>Cambia lingua</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.html</context>
+          <context context-type="linenumber">79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="817308283631033468" datatype="html">
+        <source>Compositore per media</source>
+        <target>Composer for media</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="944864984806810582" datatype="html">
+        <source>Film, TV e videogiochi</source>
+        <target>Film, TV and games</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3931045132776732110" datatype="html">
+        <source>Contatta</source>
+        <target>Get in touch</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8524466570388368397" datatype="html">
+        <source>Lavori recenti</source>
+        <target>Recent works</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1371425987659808915" datatype="html">
+        <source>Chi sono</source>
+        <target>About me</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="405945504415580187" datatype="html">
+        <source> Sono un compositore e cantante di Milano. Il mio viaggio nella musica è iniziato all&apos;età di dodici anni con il canto e il Musical. Crescendo ho iniziato a sperimentare con il missaggio, l&apos;arrangiamento e la produzione della mia musica e di quella di altri artisti. Negli ultimi anno ho avuto l&apos;opportunità di comporre musica originale per Film e TV, combinando il mio amore per la composizione, la produzione e lo storytelling. </source>
+        <target>I am a composer and singer born and living in Milan, Italy. My journey in music started when I was twelve with singing and musical theatre. Growing up I started experimenting with mixing, arranging and producing my own and other people's music. In recent years I've had the opportunity to compose original music for both Film and TV, combining my love for composition, production and storytelling into one.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">27,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6586358928872971133" datatype="html">
+        <source>I lavori</source>
+        <target>The works</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/works-page/works-list/works-list.component.html</context>
+          <context context-type="linenumber">3,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5764302646531668274" datatype="html">
+        <source>Informazioni</source>
+        <target>More...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/works-page/works-list/works-list.component.html</context>
+          <context context-type="linenumber">14,15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/works/works.component.html</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6747505497584557518" datatype="html">
+        <source>Sul progetto</source>
+        <target>About the project</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/works-page/works-single/works-single.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1419650165937291929" datatype="html">
+        <source>Regia di:</source>
+        <target>Director:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/works-page/works-single/works-single.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8802396736504383248" datatype="html">
+        <source><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>Supervisore musiche:</source>
+        <target>Music supervisor:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/works-page/works-single/works-single.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1604532132025464738" datatype="html">
+        <source><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>Fonico:</source>
+        <target>Sound Engeneer:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/works-page/works-single/works-single.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4684577755611080943" datatype="html">
+        <source><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>Direttore d&apos;orchestra:</source>
+        <target>Conductor:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/works-page/works-single/works-single.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6366283263749592204" datatype="html">
+        <source><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>Copista:</source>
+        <target>Copyist:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/works-page/works-single/works-single.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6902218767562991413" datatype="html">
+        <source><x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>Solisti:</source>
+        <target>Soloists:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/works-page/works-single/works-single.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="342918222899482457" datatype="html">
+        <source>Indietro</source>
+        <target>Go back</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/works-page/works-single/works-single.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

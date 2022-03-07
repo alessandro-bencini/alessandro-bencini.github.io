@@ -16,10 +16,20 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "it",
+        "locales": {
+          "en": {
+            "translation": "src/locale/messages.en.xlf",
+            "baseHref": "/en"
+          }
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "aot": true,
             "localize": true,
             "outputPath": "docs",
             "index": "src/index.html",
@@ -54,12 +64,16 @@
               "outputHashing": "all"
             },
             "development": {
+              "localize": false,
               "buildOptimizer": false,
               "optimization": false,
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+            },
+            "en": {
+              "localize": ["en"]
             }
           },
           "defaultConfiguration": "production"
@@ -72,6 +86,9 @@
             },
             "development": {
               "browserTarget": "alessandro-bencini:build:development"
+            },
+            "en": {
+              "browserTarget": "alessandro-bencini:build:development,en"
             }
           },
           "defaultConfiguration": "development"
