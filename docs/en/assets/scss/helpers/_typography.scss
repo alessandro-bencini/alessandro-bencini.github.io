@@ -1,12 +1,18 @@
 @use "_colors" as *;
 
+.section-title,
+.page-title {
+  background: $gradient;
+  background-clip: text;
+  color: transparent;
+}
+
 .page-title {
   padding-top: 3em;
   padding-bottom: 0.5em;
-  color: $accent;
   font-size: 1.65em;
 
-  &::after {
+  /* &::after {
     content: "";
     display: block;
     height: 3px;
@@ -16,14 +22,5 @@
     opacity: 50%;
     margin: 0 auto;
     margin-top: 0.25em;
-  }
-}
-
-.section-title,
-.page-title {
-  /* color: $accent-dark; */
-  background: $gradient;
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  } */
 }
