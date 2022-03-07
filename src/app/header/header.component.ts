@@ -30,10 +30,11 @@ export class HeaderComponent implements OnInit {
     }
   }
 
+  changeLang(link: string) {
+    localStorage.setItem('lang', link);
+  }
+
   constructor() {}
 
-  // @ts-ignore
-  lang;
-
-  ngOnInit(): void {}
+  ngOnInit() {}
 }
