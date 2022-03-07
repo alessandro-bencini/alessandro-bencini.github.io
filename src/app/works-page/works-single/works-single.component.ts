@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { WorksService } from 'src/app/works.service';
 import {
   DomSanitizer,
@@ -18,10 +18,13 @@ export class WorksSingleComponent implements OnInit {
   id: any;
   // @ts-ignore
   lang;
+  // @ts-ignore
+  urlString;
 
   constructor(
     private worksService: WorksService,
     private route: ActivatedRoute,
+    private url: Router,
     private sanitizer: DomSanitizer
   ) {}
 
@@ -33,7 +36,15 @@ export class WorksSingleComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.lang = localStorage.getItem('lang') || 'it';
+    /* this.lang = localStorage.getItem('lang') || 'it'; */
+    this.urlString = this.url.routerState.snapshot.url;
+    console.log(this.urlString);
+
+    if (this.urlString.includes('en')) {
+      this.lang = 'en';
+    } else {
+      this.lang = 'it';
+    }
 
     this.route.params.subscribe((params) => {
       this.id = params['id'];

@@ -32,5 +32,8 @@ export class HeaderComponent implements OnInit {
 
   constructor() {}
 
+  // @ts-ignore
+  lang;
+
   ngOnInit(): void {}
 }
