@@ -26,6 +26,12 @@
         </p>
        <!-- <p class="work-single--description">{{ work.this.descriptionLang }}</p> -->
 
+       <div class="platforms">
+          <a *ngIf="work.spotify" href="{{ work.spotify }}" target="_blank" class="platform-link"><i class="fa-brands fa-spotify"></i></a>
+          <a *ngIf="work.apple" href="{{ work.apple }}" target="_blank" class="platform-link"><i class="fa-brands fa-itunes"></i></a>
+          <a *ngIf="work.amazon" href="{{ work.amazon }}" target="_blank" class="platform-link"><i class="fa-brands fa-amazon"></i></a>
+       </div>
+
        <iframe *ngIf="work.embed" class="iframe" allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="450" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" [src]="sanitizeUrl(work.embed)"></iframe>
 
       <button routerLink="/works-page" class="back-btn btn btn-dark" i18n>Indietro</button>
