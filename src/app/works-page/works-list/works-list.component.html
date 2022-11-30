@@ -4,7 +4,7 @@
 
     <div class="works">
       <div class="works--card card" *ngFor="let work of works | async">
-      <img [src]="'assets/img/works/' + work.image" alt="">
+      <img [src]="'assets/img/works/' + work.imageThumb" alt="">
         <div class="works--card--text">
           <h3 class="works--card--title">{{ work.title }}</h3>
           <p class="works--card--client">{{ work.client }}</p>
